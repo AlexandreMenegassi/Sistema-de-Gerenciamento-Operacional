@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Sistema de Gerenciamento Operacional</string>
-    <string name="text_login_log_in">entrar</string>
+
+    <!-- Tela de Login -->
+    <string name="text_login_log_in">Entrar</string>
+
+    <!-- Tela de Principal -->
+    <string name="button_1">Arualizar Estação</string>
+    <string name="nutton_2">Visualizar Informação da Estação</string>
+    <string name="button_3">Cadastrar Pendências</string>
+
+
 </resources>
