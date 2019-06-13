@@ -8,17 +8,20 @@
     tools:context=".view.MainActivity">
 
     <Button
+        android:id="@+id/atualizarEstacaoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_1"/>
 
     <Button
+        android:id="@+id/cadastrarPendenciasId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nutton_2"
         android:layout_marginTop="30dp"/>
 
     <Button
+        android:id="@+id/vizualizarEstacaoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_3"
