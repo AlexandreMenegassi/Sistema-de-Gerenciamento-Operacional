@@ -13,6 +13,7 @@ public class AtualizarEstacaoViewHolder extends RecyclerView.ViewHolder {
     private TextView title_2;
     private TextView title_3;
     private TextView title_4;
+    private TextView title_5;
 
     public AtualizarEstacaoViewHolder(View itemView) {
         super(itemView);
@@ -20,6 +21,7 @@ public class AtualizarEstacaoViewHolder extends RecyclerView.ViewHolder {
         this.title_2 = itemView.findViewById(R.id.title2);
         this.title_3 = itemView.findViewById(R.id.title3);
         this.title_4 = itemView.findViewById(R.id.title4);
+        this.title_5 = itemView.findViewById(R.id.title5);
     }
 
     public void bindData(final Estacao estacao, final OnListClickInteractionListenerAtualizarEstacao listener){
@@ -28,6 +30,7 @@ public class AtualizarEstacaoViewHolder extends RecyclerView.ViewHolder {
         this.title_2.setText(estacao.regional);
         this.title_3.setText(estacao.uf);
         this.title_4.setText(estacao.cidade);
+        this.title_5.setText(estacao.endid);
 
         this.title_1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
