@@ -19,6 +19,7 @@
             android:id="@+id/form_login_login_Id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="admin"
             android:hint="Email"
             android:inputType="textWebEmailAddress"
             tools:ignore="HardcodedText" />
@@ -37,6 +38,7 @@
             android:id="@+id/form_login_senha_Id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="admin"
             android:hint="Senha"
             android:inputType="textWebPassword"
             tools:ignore="HardcodedText" />
