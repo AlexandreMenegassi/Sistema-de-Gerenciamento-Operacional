@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.system.operational.sgo.DAO.Database;
 import com.system.operational.sgo.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         castLayout();
         buttons();
+
+        Database.lerEstacoes();
 
     }
 
