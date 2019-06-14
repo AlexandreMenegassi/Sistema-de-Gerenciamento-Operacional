@@ -16,35 +16,33 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class RequestHandler {
 
-    public String sendPostRequest(String requestURL,
-                                  HashMap<String, String> postDataParams) {
-        //Creating a URL
+    public String sendPostRequest(String requestURL, HashMap<String, String> postDataParams) {
+
         URL url;
 
-        //StringBuilder object to store the message retrieved from the server
+        // Objeto StringBuilder para armazenar a mensagem recuperada do servidor
         StringBuilder sb = new StringBuilder();
         try {
-            //Initializing Url
+            //Inicializando URL
             url = new URL(requestURL);
 
-            //Creating an httmlurl connection
+            //Criando conexão Html com URL
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
-            //Configuring connection properties
+            //Propriedades da conexão
             conn.setReadTimeout(15000);
             conn.setConnectTimeout(15000);
             conn.setRequestMethod("POST");
             conn.setDoInput(true);
             conn.setDoOutput(true);
 
-            //Creating an output stream
+            //Criando um fluxo de saída
             OutputStream os = conn.getOutputStream();
 
-            //Writing parameters to the request
-            //We are using a method getPostDataString which is defined below
+            // Escrevendo parâmetros para o pedido, usando um método getPostDataString
             BufferedWriter writer = new BufferedWriter(
                     new OutputStreamWriter(os, "UTF-8"));
-            writer.write(getPostDataString(postDataParams));
+            //writer.write(getPostDataString(postDataParams));
 
             writer.flush();
             writer.close();
@@ -56,7 +54,8 @@ public class RequestHandler {
                 BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 sb = new StringBuilder();
                 String response;
-                //Reading server response
+
+                //Lendo a resposta do servidor
                 while ((response = br.readLine()) != null) {
                     sb.append(response);
                 }
