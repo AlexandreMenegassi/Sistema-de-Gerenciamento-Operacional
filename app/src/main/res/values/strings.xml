@@ -5,7 +5,7 @@
     <string name="text_login_log_in">Entrar</string>
 
     <!-- Tela de Principal -->
-    <string name="button_1">Arualizar Estação</string>
+    <string name="button_1">Atualizar Estação</string>
     <string name="nutton_2">Visualizar Informação da Estação</string>
     <string name="button_3">Cadastrar Pendências</string>
 
