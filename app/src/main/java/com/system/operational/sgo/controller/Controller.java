@@ -15,9 +15,7 @@ import java.util.List;
 public class Controller {
 
     public static ViewHolder mViewHolderAtualizarEstacao = new ViewHolder();
-    public static Estacao estacao;
 
-    //LIST
     public static List<Estacao> listAtualizarEstacao = new ArrayList<>();
 
     public static void listarCliente(Context context, RecyclerView recyclerView) {
