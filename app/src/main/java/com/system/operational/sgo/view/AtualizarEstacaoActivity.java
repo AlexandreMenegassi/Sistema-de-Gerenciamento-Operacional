@@ -19,6 +19,5 @@ public class AtualizarEstacaoActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerViewAtualizarEstacaoId);
         Controller.listarCliente(this, recyclerView);
-
     }
 }
