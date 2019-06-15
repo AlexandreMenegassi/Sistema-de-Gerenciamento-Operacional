@@ -8,8 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.system.operational.sgo.DAO.DatabaseAuth;
 import com.system.operational.sgo.R;
+import com.system.operational.sgo.controller.Controller;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -37,12 +40,15 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login_Id);
     }
 
-    public void buttonLogin(){
+    public void buttonLogin() {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validateForm())
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                if (validateForm()) {
+                    DatabaseAuth.verificarUsuario(editTextEmail.getText().toString(), editTextSenha.getText().toString());
+                    if (DatabaseAuth.USUARIO_AUTENTICADO) startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                }
+                Toast.makeText(LoginActivity.this, Controller.message, Toast.LENGTH_SHORT).show();
             }
         });
     }
