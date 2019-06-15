@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-public class Database {
+public class DatabaseList {
 
     private static final int CODE_GET_REQUEST = 1024;
     private static final int CODE_POST_REQUEST = 1025;
@@ -39,6 +39,7 @@ public class Database {
             try {
                 JSONObject object = new JSONObject(s);
                 if (!object.getBoolean("error")) {
+                    Controller.message = object.getString("message");
                     listarEstacoes(object.getJSONArray("lista"));
                 }
             } catch (JSONException e) {
