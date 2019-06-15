@@ -10,10 +10,9 @@ public class URL {
 
     public static final String URL_LISTAR_ESTACAO = ROOT_URL + "atualizarEstacao";
 
-    //public static final String URL_AUTENTICAR_USUARIO = ROOT_URL + "autenticarUsuario";
+    public static final String URL_VERIFICAR_USUARIO = ROOT_URL + "verificarUsuario&login=";
 
-    //public static final String URL_CADASTRAR_PENDENCIAS = ROOT_URL + "cadastrarPendencias";
+    //public static final String URL_AUTENTICAR_USUARIO = ROOT_URL + "";
 
-    //public static final String URL_LISTAR_PENDENCIA = ROOT_URL + "deletehero&id=";
-
+    //public static final String URL_CADASTRAR_PENDENCIAS = ROOT_URL + "";
 }
