@@ -22,7 +22,6 @@ public class DatabaseList {
     }
 
     private static class PerformNetworkRequest extends AsyncTask<Void, Void, String> {
-
         String url;
         HashMap<String, String> params;
         int requestCode;
@@ -35,7 +34,6 @@ public class DatabaseList {
 
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
             try {
                 JSONObject object = new JSONObject(s);
                 if (!object.getBoolean("error")) {
@@ -49,19 +47,14 @@ public class DatabaseList {
 
         protected String doInBackground(Void... voids) {
             RequestHandler requestHandler = new RequestHandler();
-
             if (requestCode == CODE_POST_REQUEST) return requestHandler.sendPostRequest(url, params);
-
             if (requestCode == CODE_GET_REQUEST) return requestHandler.sendGetRequest(url);
-
             return null;
         }
     }
 
     public static void listarEstacoes(@org.jetbrains.annotations.NotNull JSONArray station) throws JSONException {
-
         Controller.listAtualizarEstacao.clear();
-
         for (int i = 0; i < station.length(); i++) {
             JSONObject obj = station.getJSONObject(i);
             Controller.listAtualizarEstacao.add(new Estacao(
