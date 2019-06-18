@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Sistema de Gerenciamento Operacional</string>
+
+    <!-- Tela de activity -->
+    <string name="text_login_log_in">Entrar</string>
+
+    <!-- Tela de Principal -->
+    <string name="button_1">Atualizar Estação</string>
+    <string name="nutton_2">Visualizar Informação da Estação</string>
+    <string name="button_3">Cadastrar Pendências</string>
+
+    <!-- Tela de Formulario Atualizar Estacao -->
+    <string name="form_tipo_de_acesso">Tipo de acesso a estação</string>
+    <string name="form_baterias">Baterias</string>
+    <string name="form_quantidade_de_bancos">Quantidade de bancos</string>
+    <string name="form_fabricante_da_fonte">Fabricante da fonte</string>
+    <string name="form_quantidade_ur">Quantidade de UR / Conversor</string>
+    <string name="form_fonte_por_fora">Fonte por fora</string>
+    <string name="form_num_medidor">Número do medidor</string>
+    <string name="form_site_concentrador">Site concentrador</string>
+    <string name="form_btn_atualizar">Atualizar</string>
 </resources>
