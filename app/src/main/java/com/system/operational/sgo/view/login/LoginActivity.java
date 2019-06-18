@@ -1,5 +1,6 @@
-package com.system.operational.sgo.view;
+package com.system.operational.sgo.view.login;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -8,11 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.system.operational.sgo.DAO.DatabaseAuth;
 import com.system.operational.sgo.R;
-import com.system.operational.sgo.controller.Controller;
+import com.system.operational.sgo.view.main.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,12 +21,14 @@ public class LoginActivity extends AppCompatActivity {
     private AppCompatEditText editTextSenha;
     private TextInputLayout textInputLayoutSenha;
     private Button btnLogin;
+    public static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        context = this;
         castLayout();
         buttonLogin();
 
@@ -46,9 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (validateForm()) {
                     DatabaseAuth.verificarUsuario(editTextEmail.getText().toString(), editTextSenha.getText().toString());
-                    if (DatabaseAuth.USUARIO_AUTENTICADO) startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }
-                Toast.makeText(LoginActivity.this, Controller.message, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -70,5 +70,10 @@ public class LoginActivity extends AppCompatActivity {
             textInputLayoutSenha.setErrorEnabled(false);
         }
         return formularioPreenchido;
+    }
+
+    public static void activity(Context contexto) {
+        Intent login = new Intent(contexto, MainActivity.class);
+        contexto.startActivity(login);
     }
 }
