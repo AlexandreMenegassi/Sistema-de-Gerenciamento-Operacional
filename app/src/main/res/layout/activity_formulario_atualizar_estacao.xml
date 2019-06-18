@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.forms.FormularioAtualizarEstacaoActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/formUpdateStationNameStationOneId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/formUpdateStationNameStationTwoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginStart="20dp"/>
+    </TableRow>
+
+    <EditText
+        android:id="@+id/formUpdateStationTipoAcessoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_tipo_de_acesso"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formUpdateStationBateriasId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_baterias"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formUpdateStationQtdBancosId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_quantidade_de_bancos"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/formUpdateStationFabricanteDaFonteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_fabricante_da_fonte"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formUpdateStationQtdUrId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_quantidade_ur"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/formUpdateStationFontePorForaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_fonte_por_fora"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formUpdateStationNumMedidorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_num_medidor"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formUpdateStationConcentradorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/form_site_concentrador"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/formUpdateStationBtnUpdateId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/form_btn_atualizar" />
+
+</LinearLayout>
