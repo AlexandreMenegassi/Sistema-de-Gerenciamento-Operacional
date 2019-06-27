@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".view.login.LoginActivity">
 
@@ -19,9 +19,9 @@
             android:id="@+id/form_login_login_Id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="admin"
             android:hint="Email"
             android:inputType="textWebEmailAddress"
+            android:text="admin"
             tools:ignore="HardcodedText" />
 
     </android.support.design.widget.TextInputLayout>
@@ -38,20 +38,20 @@
             android:id="@+id/form_login_senha_Id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="admin"
             android:hint="Senha"
             android:inputType="textWebPassword"
+            android:text="admin"
             tools:ignore="HardcodedText" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btn_login_Id"
+        style="@style/Btn_login_sing_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_login_log_in"
-        android:layout_marginTop="32dp"
         android:layout_gravity="center"
-        style="@style/Btn_login_sing_in"/>
+        android:layout_marginTop="32dp"
+        android:text="@string/text_login_log_in" />
 
 </LinearLayout>
