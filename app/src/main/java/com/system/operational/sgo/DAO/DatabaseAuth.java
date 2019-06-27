@@ -34,7 +34,7 @@ public class DatabaseAuth {
             super.onPostExecute(s);
             try {
                 JSONObject object = new JSONObject(s);
-                if (object.getBoolean("error")) {
+                if (!object.getBoolean("error")) {
                     Controller.message = object.getString("message");
                     autenticarUsuario(object.getJSONArray("dados"));
                     Toast.makeText(LoginActivity.context, Controller.message, Toast.LENGTH_SHORT).show();

@@ -34,7 +34,7 @@ public class DatabaseUpdateStation {
             super.onPostExecute(s);
             try {
                     JSONObject object = new JSONObject(s);
-                if (object.getBoolean("error")) {
+                if (!object.getBoolean("error")) {
                     Controller.message = object.getString("message");
                     Toast.makeText(FormularioAtualizarEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
                     FormularioAtualizarEstacaoActivity.activity(FormularioAtualizarEstacaoActivity.context);
