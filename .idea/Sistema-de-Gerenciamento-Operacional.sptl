@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_152-release" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="org.intellij.idea.plugins.gantt.Task">
+    <void property="index">
+     <int>1</int>
+    </void>
+    <void property="subject">
+     <string>controller</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="org.intellij.idea.plugins.gantt.Task">
+    <void property="index">
+     <int>2</int>
+    </void>
+    <void property="subject">
+     <string>DAO</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="org.intellij.idea.plugins.gantt.Task">
+    <void property="index">
+     <int>3</int>
+    </void>
+    <void property="subject">
+     <string>model</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="org.intellij.idea.plugins.gantt.Task">
+    <void property="index">
+     <int>4</int>
+    </void>
+    <void property="subject">
+     <string>view</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
