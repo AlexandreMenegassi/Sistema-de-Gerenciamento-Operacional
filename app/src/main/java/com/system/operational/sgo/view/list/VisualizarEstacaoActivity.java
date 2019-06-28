@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.system.operational.sgo.R;
 import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.view.data.DadosEstacao;
+import com.system.operational.sgo.view.forms.FormularioAtualizarEstacaoActivity;
 
 public class VisualizarEstacaoActivity extends AppCompatActivity {
 
@@ -25,8 +26,13 @@ public class VisualizarEstacaoActivity extends AppCompatActivity {
         Controller.listaDeEstacao(this, recyclerView, 1);
     }
 
-    public static void activity(Context contexto) {
-        Intent login = new Intent(contexto, DadosEstacao.class);
-        contexto.startActivity(login);
+    public static void activityForm(Context contexto) {
+        Intent intent = new Intent(contexto, FormularioAtualizarEstacaoActivity.class);
+        contexto.startActivity(intent);
+    }
+
+    public static void activityInfo(Context contexto) {
+        Intent intent = new Intent(contexto, DadosEstacao.class);
+        contexto.startActivity(intent);
     }
 }

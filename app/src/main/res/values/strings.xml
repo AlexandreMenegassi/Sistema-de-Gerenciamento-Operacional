@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Sistema de Gerenciamento Operacional</string>
 
-    <!-- Tela de activity -->
+    <!-- Tela de activityForm -->
     <string name="text_login_log_in">Entrar</string>
 
     <!-- Tela de Principal -->

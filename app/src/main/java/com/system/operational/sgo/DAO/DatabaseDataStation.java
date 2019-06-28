@@ -35,9 +35,9 @@ public class DatabaseDataStation {
                 JSONObject object = new JSONObject(s);
                 if (!object.getBoolean("error")) {
                     dadosDaEstacao(object.getJSONArray("dados"));
-                    VisualizarEstacaoActivity.activity(VisualizarEstacaoActivity.context);
+                    VisualizarEstacaoActivity.activityInfo(VisualizarEstacaoActivity.context);
                 } else {
-                    //function alert
+                    Controller.alertDialogStationNotUpdate(Controller.ESTACAO.get(1).toString(),Controller.ESTACAO.get(2).toString());
                     dadosDaEstacao(object.getJSONArray("dados"));
                 }
             } catch (JSONException e) {

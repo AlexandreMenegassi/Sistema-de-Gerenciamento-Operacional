@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Style activity login. -->
+    <!-- Style activityForm login. -->
     <style name="Btn_login_sing_in" parent="Widget.AppCompat.Button.Colored">
         <item name="android:backgroundTint">@color/colorPrimary</item>
     </style>
