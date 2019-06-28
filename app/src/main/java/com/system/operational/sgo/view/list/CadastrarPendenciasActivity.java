@@ -20,6 +20,6 @@ public class CadastrarPendenciasActivity extends AppCompatActivity {
 
         context = this;
         recyclerView = findViewById(R.id.recyclerViewCadastrarPendenciasId);
-        Controller.listaDeEstacao(this, recyclerView, 1);
+        Controller.listaDeEstacao(this, recyclerView, 2);
     }
 }
