@@ -16,8 +16,8 @@ import com.system.operational.sgo.view.list.VisualizarEstacaoActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button atualizarEstacao;
-    Button cadastrarPendencias;
     Button vizualizarEstacao;
+    Button cadastrarPendencias;
     public static Context context;
 
     @Override
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void castLayout(){
         atualizarEstacao = findViewById(R.id.atualizarEstacaoId);
-        cadastrarPendencias = findViewById(R.id.cadastrarPendenciasId);
         vizualizarEstacao = findViewById(R.id.vizualizarEstacaoId);
+        cadastrarPendencias = findViewById(R.id.cadastrarPendenciasId);
     }
 
     public void buttons(){
@@ -47,17 +47,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        cadastrarPendencias.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, CadastrarPendenciasActivity.class));
-            }
-        });
-
         vizualizarEstacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, VisualizarEstacaoActivity.class));
+            }
+        });
+
+        cadastrarPendencias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CadastrarPendenciasActivity.class));
             }
         });
     }
