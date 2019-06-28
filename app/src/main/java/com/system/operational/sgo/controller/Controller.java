@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.system.operational.sgo.DAO.DatabaseDataStation;
 import com.system.operational.sgo.DAO.DatabaseList;
 import com.system.operational.sgo.controller.list.listaDeEstacao.ListaDeEstacaoListAdapter;
 import com.system.operational.sgo.controller.list.listaDeEstacao.OnListClickInteractionListenerListaDeEstacao;
 import com.system.operational.sgo.model.Estacao;
+import com.system.operational.sgo.model.StationSituation;
 import com.system.operational.sgo.model.Usuario;
 import com.system.operational.sgo.view.forms.FormularioAtualizarEstacaoActivity;
 
@@ -19,6 +21,7 @@ public class Controller {
 
     public static ViewHolder mViewHolderListaDeEstacao = new ViewHolder();
     public static List<Estacao> listaDeEstacao = new ArrayList<>();
+    public static StationSituation dadosDaEstacao = new StationSituation();
     public static Usuario USUARIO = new Usuario();
     public static List ESTACAO = new ArrayList();
     public static String message;
@@ -36,7 +39,7 @@ public class Controller {
                             context.startActivity(new Intent(context, FormularioAtualizarEstacaoActivity.class));
                             break;
                         case 1:
-
+                            DatabaseDataStation.dadosEstacao(id);
                             break;
                         case 2:
 
