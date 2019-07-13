@@ -1,4 +1,4 @@
-package com.system.operational.sgo.controller.list.listaDeEstacao;
+package com.system.operational.sgo.controller.list;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.system.operational.sgo.controller.list.listaDeEstacao;
+package com.system.operational.sgo.controller.list;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -17,7 +17,7 @@ public class ListaDeEstacaoListAdapter extends RecyclerView.Adapter<ListaDeEstac
     private List<Estacao> mListEstacao;
     private OnListClickInteractionListenerListaDeEstacao mOnListClickInteractionListener;
 
-    public ListaDeEstacaoListAdapter(List<Estacao> estacaoList, OnListClickInteractionListenerListaDeEstacao listener){
+    public ListaDeEstacaoListAdapter(List<Estacao> estacaoList, OnListClickInteractionListenerListaDeEstacao listener) {
         this.mListEstacao = estacaoList;
         this.mOnListClickInteractionListener = listener;
     }
@@ -28,7 +28,7 @@ public class ListaDeEstacaoListAdapter extends RecyclerView.Adapter<ListaDeEstac
         Context context = viewGroup.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View view = inflater.inflate(R.layout.row_list_station_activity, viewGroup, false);
+        View view = inflater.inflate(R.layout.row_list_station, viewGroup, false);
         return new ListaDeEstacaoViewHolder(view);
     }
 
