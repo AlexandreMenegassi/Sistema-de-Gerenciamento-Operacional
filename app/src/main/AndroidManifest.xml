@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.data.DadosEstacao"></activity>
-        <activity android:name=".view.forms.FormularioAtualizarEstacaoActivity" />
+        <activity android:name=".view.form.FormularioInserirDadosEstacaoActivity"></activity>
+        <activity android:name=".view.data.DadosEstacao" />
+        <activity android:name=".view.form.FormularioAtualizarDadosEstacaoActivity" />
         <activity android:name=".view.list.CadastrarPendenciasActivity" />
         <activity android:name=".view.list.VisualizarEstacaoActivity" />
         <activity android:name=".view.list.AtualizarEstacaoActivity" />

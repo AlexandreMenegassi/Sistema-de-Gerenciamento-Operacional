@@ -19,4 +19,5 @@
     <string name="form_num_medidor">Número do medidor</string>
     <string name="form_site_concentrador">Site concentrador</string>
     <string name="form_btn_atualizar">Atualizar</string>
+    <string name="form_btn_inserir">Inserir</string>
 </resources>
