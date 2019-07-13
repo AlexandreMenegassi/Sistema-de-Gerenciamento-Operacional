@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.form.FormularioAtualizarDadosEstacaoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/formUpdateStationNameStationOneId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/formUpdateStationNameStationTwoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_transfer" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationTipoAcessoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_tipo_de_acesso"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_battery" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationBateriasId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_baterias"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_list" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationQtdBancosId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_quantidade_de_bancos"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_domain" />
+
+
+                    <EditText
+                        android:id="@+id/formUpdateStationFabricanteDaFonteId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_fabricante_da_fonte"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_list" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationQtdUrId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_quantidade_ur"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_style" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationFontePorForaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_fonte_por_fora"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_create" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationNumMedidorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_num_medidor"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_computer" />
+
+                    <EditText
+                        android:id="@+id/formUpdateStationConcentradorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="@string/form_site_concentrador"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/formUpdateStationBtnUpdateId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="50dp"
+                    android:background="#009a9a"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:padding="16dp"
+                    android:text="@string/form_btn_atualizar"
+                    android:textColor="#d9e5f3"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
