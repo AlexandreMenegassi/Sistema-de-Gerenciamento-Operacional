@@ -50,15 +50,17 @@ public class DatabaseList {
     }
 
     public static void listarEstacoes(@org.jetbrains.annotations.NotNull JSONArray station) throws JSONException {
-        Controller.listaDeEstacao.clear();
+        Controller.LISTADADOSESTACAO.clear();
+        Controller.LISTANOMEESTACAO.clear();
         for (int i = 0; i < station.length(); i++) {
-            Controller.listaDeEstacao.add(new Estacao(
+            Controller.LISTADADOSESTACAO.add(new Estacao(
                 station.getJSONObject(i).getInt("idestacao"),
                 station.getJSONObject(i).getString("endid"),
                 station.getJSONObject(i).getString("nomeestacao"),
                 station.getJSONObject(i).getString("regional"),
                 station.getJSONObject(i).getString("uf"),
                 station.getJSONObject(i).getString("cidade")));
+            Controller.LISTANOMEESTACAO.add(station.getJSONObject(i).getString("nomeestacao"));
         }
     }
 }
