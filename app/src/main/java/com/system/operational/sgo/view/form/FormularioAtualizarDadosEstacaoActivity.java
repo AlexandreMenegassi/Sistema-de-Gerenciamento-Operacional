@@ -1,11 +1,10 @@
-package com.system.operational.sgo.view.forms;
+package com.system.operational.sgo.view.form;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -15,7 +14,7 @@ import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.model.UpdateStation;
 import com.system.operational.sgo.view.main.MainActivity;
 
-public class FormularioAtualizarEstacaoActivity extends AppCompatActivity {
+public class FormularioAtualizarDadosEstacaoActivity extends AppCompatActivity {
 
     TextView nameOne;
     TextView nameTwo;
@@ -27,23 +26,21 @@ public class FormularioAtualizarEstacaoActivity extends AppCompatActivity {
     EditText formFolhaFonte;
     EditText formMedidor;
     EditText formConcentrador;
-    Button btnUpdate;
+    TextView btnUpdate;
     UpdateStation updateStation = new UpdateStation();
     public static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formulario_atualizar_estacao);
+        setContentView(R.layout.activity_form_atualizar);
 
         castLayout();
         buttun();
 
         context = this;
-
         nameOne.setText(Controller.ESTACAO.get(1).toString());
         nameTwo.setText(Controller.ESTACAO.get(2).toString());
-
     }
 
     private void castLayout() {
@@ -110,7 +107,7 @@ public class FormularioAtualizarEstacaoActivity extends AppCompatActivity {
     }
 
     public static void activity(Context contexto) {
-        Intent login = new Intent(contexto, MainActivity.class);
-        contexto.startActivity(login);
+        Intent intent = new Intent(contexto, MainActivity.class);
+        contexto.startActivity(intent);
     }
 }
