@@ -12,29 +12,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="20sp" />
 
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/title2"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="Item 2"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textSize="17sp" />
-
-        <TextView
-            android:id="@+id/title3"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="Item 3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textSize="17sp" />
-
         <TextView
             android:id="@+id/title4"
-            android:layout_width="125dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Item 4"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -42,11 +22,35 @@
 
         <TextView
             android:id="@+id/title5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Item 5"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textSize="17sp" />
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Item 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Item 3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="17sp" />
     </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4a5a71"></LinearLayout>
 </LinearLayout>
