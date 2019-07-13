@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.model.UpdateStation;
-import com.system.operational.sgo.view.forms.FormularioAtualizarEstacaoActivity;
+import com.system.operational.sgo.view.form.FormularioAtualizarDadosEstacaoActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 public class DatabaseUpdateStation {
 
     public static void atualizarEstacao(UpdateStation estacao) {
-        PerformNetworkRequest request = new PerformNetworkRequest(URL.URL_ATUALIZAR_ESTACAO + parametroUrl(estacao), null, URL.CODE_GET_REQUEST);
+        PerformNetworkRequest request = new PerformNetworkRequest(URL.URL_ATUALIZAR_DADOS_ESTACAO + parametroUrl(estacao), null, URL.CODE_GET_REQUEST);
         request.execute();
     }
 
@@ -36,11 +36,11 @@ public class DatabaseUpdateStation {
                     JSONObject object = new JSONObject(s);
                 if (!object.getBoolean("error")) {
                     Controller.message = object.getString("message");
-                    Toast.makeText(FormularioAtualizarEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
-                    FormularioAtualizarEstacaoActivity.activity(FormularioAtualizarEstacaoActivity.context);
+                    Toast.makeText(FormularioAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
+                    FormularioAtualizarDadosEstacaoActivity.activity(FormularioAtualizarDadosEstacaoActivity.context);
                 } else {
                     Controller.message = object.getString("message");
-                    Toast.makeText(FormularioAtualizarEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(FormularioAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
