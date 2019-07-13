@@ -5,9 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
-import com.system.operational.sgo.DAO.DatabaseList;
 import com.system.operational.sgo.R;
 import com.system.operational.sgo.view.list.AtualizarEstacaoActivity;
 import com.system.operational.sgo.view.list.CadastrarPendenciasActivity;
@@ -15,9 +14,9 @@ import com.system.operational.sgo.view.list.VisualizarEstacaoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button atualizarEstacao;
-    Button vizualizarEstacao;
-    Button cadastrarPendencias;
+    TextView atualizarEstacao;
+    TextView vizualizarEstacao;
+    TextView cadastrarPendencias;
     public static Context context;
 
     @Override
@@ -28,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
         context = this;
         castLayout();
         buttons();
-
-        DatabaseList.lerEstacoes();
-
     }
 
     public void castLayout(){
