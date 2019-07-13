@@ -3,28 +3,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo_main"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".view.main.MainActivity">
 
-    <Button
-        android:id="@+id/atualizarEstacaoId"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_1"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="25dp">
 
-    <Button
-        android:id="@+id/vizualizarEstacaoId"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/nutton_2"
-        android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/atualizarEstacaoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#009a9a"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="16dp"
+            android:text="@string/button_1"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/cadastrarPendenciasId"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_3"
-        android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/vizualizarEstacaoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="100dp"
+            android:background="#009a9a"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="16dp"
+            android:text="@string/nutton_2"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold" />
 
+
+        <TextView
+            android:id="@+id/cadastrarPendenciasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="100dp"
+            android:background="#009a9a"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="16dp"
+            android:text="@string/button_3"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </LinearLayout>
