@@ -11,10 +11,11 @@ import com.system.operational.sgo.DAO.DatabaseDataStation;
 import com.system.operational.sgo.DAO.DatabaseList;
 import com.system.operational.sgo.controller.list.ListaDeEstacaoListAdapter;
 import com.system.operational.sgo.controller.list.OnListClickInteractionListenerListaDeEstacao;
-import com.system.operational.sgo.model.Estacao;
-import com.system.operational.sgo.model.StationSituation;
-import com.system.operational.sgo.model.Usuario;
-import com.system.operational.sgo.view.form.FormularioAtualizarDadosEstacaoActivity;
+import com.system.operational.sgo.model.InformationStation;
+import com.system.operational.sgo.model.DateStation;
+import com.system.operational.sgo.model.User;
+import com.system.operational.sgo.view.form.FormAtualizarDadosEstacaoActivity;
+import com.system.operational.sgo.view.form.FormCadastrarPendenciaActivity;
 import com.system.operational.sgo.view.list.VisualizarEstacaoActivity;
 
 import java.util.ArrayList;
@@ -23,9 +24,9 @@ import java.util.List;
 public class Controller {
 
     public static ViewHolder mViewHolderListaDeEstacao = new ViewHolder();
-    public static List<Estacao> LISTADADOSESTACAO = new ArrayList<>();
-    public static StationSituation dadosDaEstacao = new StationSituation();
-    public static Usuario USUARIO = new Usuario();
+    public static List<InformationStation> LISTADADOSESTACAO = new ArrayList<>();
+    public static DateStation dadosDaEstacao = new DateStation();
+    public static User User = new User();
     public static List ESTACAO = new ArrayList();
     public static String message;
     private static AlertDialog alerta;
@@ -41,12 +42,13 @@ public class Controller {
                 public void onClick(int id) {
                     switch (op) {
                         case 0:
-                            context.startActivity(new Intent(context, FormularioAtualizarDadosEstacaoActivity.class));
+                            context.startActivity(new Intent(context, FormAtualizarDadosEstacaoActivity.class));
                             break;
                         case 1:
                             DatabaseDataStation.dadosEstacao(id);
                             break;
                         case 2:
+                            context.startActivity(new Intent(context, FormCadastrarPendenciaActivity.class));
                             break;
                     }
                 }
@@ -64,9 +66,9 @@ public class Controller {
         }
     }
 
-    public static void filtarEstacao(final Context context, RecyclerView recyclerView, String filtro, final int op) {
+    public static void filtrarEstacao(final Context context, RecyclerView recyclerView, String filtro, final int op) {
 
-        List<Estacao> dadosFiltrado = new ArrayList<>();
+        List<InformationStation> dadosFiltrado = new ArrayList<>();
 
         for (int i = 0; i < LISTADADOSESTACAO.size(); i++) {
             if (LISTADADOSESTACAO.get(i).getNome().equals(filtro))
@@ -79,10 +81,13 @@ public class Controller {
                 public void onClick(int id) {
                     switch (op) {
                         case 0:
-                            context.startActivity(new Intent(context, FormularioAtualizarDadosEstacaoActivity.class));
+                            context.startActivity(new Intent(context, FormAtualizarDadosEstacaoActivity.class));
                             break;
                         case 1:
                             DatabaseDataStation.dadosEstacao(id);
+                            break;
+                        case 2:
+                            context.startActivity(new Intent(context, FormCadastrarPendenciaActivity.class));
                             break;
                     }
                 }
