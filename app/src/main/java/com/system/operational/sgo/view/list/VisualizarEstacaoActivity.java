@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.system.operational.sgo.R;
 import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.view.data.DadosEstacao;
-import com.system.operational.sgo.view.form.FormularioInserirDadosEstacaoActivity;
+import com.system.operational.sgo.view.form.FormInserirDadosEstacaoActivity;
 
 public class VisualizarEstacaoActivity extends AppCompatActivity {
 
@@ -38,13 +38,13 @@ public class VisualizarEstacaoActivity extends AppCompatActivity {
         procurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Controller.filtarEstacao(VisualizarEstacaoActivity.this, recyclerView, autoCompleteTextView.getText().toString(), 1);
+                Controller.filtrarEstacao(VisualizarEstacaoActivity.this, recyclerView, autoCompleteTextView.getText().toString(), 1);
             }
         });
     }
 
     public static void activityForm(Context contexto) {
-        Intent intent = new Intent(contexto, FormularioInserirDadosEstacaoActivity.class);
+        Intent intent = new Intent(contexto, FormInserirDadosEstacaoActivity.class);
         contexto.startActivity(intent);
     }
 
