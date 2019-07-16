@@ -39,7 +39,6 @@
                     android:hint="Usuário"
                     android:inputType="text"
                     android:letterSpacing="0.1"
-                    android:text="admin"
                     android:textColor="#fff"
                     android:textColorHint="#d9e5f3"
                     android:textSize="16dp" />
@@ -71,7 +70,6 @@
                     android:hint="Senha"
                     android:inputType="textWebPassword"
                     android:letterSpacing="0.1"
-                    android:text="admin"
                     android:textColor="#fff"
                     android:textColorHint="#d9e5f3"
                     android:textSize="16dp" />
