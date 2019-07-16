@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.system.operational.sgo.DAO.DatabaseList;
 import com.system.operational.sgo.R;
 import com.system.operational.sgo.view.list.AtualizarEstacaoActivity;
 import com.system.operational.sgo.view.list.CadastrarPendenciasActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         context = this;
         castLayout();
         buttons();
+        DatabaseList.lerEstacoes();
     }
 
     public void castLayout(){
