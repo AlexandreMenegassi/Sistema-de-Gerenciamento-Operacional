@@ -3,7 +3,7 @@ package com.system.operational.sgo.DAO;
 import android.os.AsyncTask;
 
 import com.system.operational.sgo.controller.Controller;
-import com.system.operational.sgo.model.Estacao;
+import com.system.operational.sgo.model.InformationStation;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -53,7 +53,7 @@ public class DatabaseList {
         Controller.LISTADADOSESTACAO.clear();
         Controller.LISTANOMEESTACAO.clear();
         for (int i = 0; i < station.length(); i++) {
-            Controller.LISTADADOSESTACAO.add(new Estacao(
+            Controller.LISTADADOSESTACAO.add(new InformationStation(
                 station.getJSONObject(i).getInt("idestacao"),
                 station.getJSONObject(i).getString("endid"),
                 station.getJSONObject(i).getString("nomeestacao"),

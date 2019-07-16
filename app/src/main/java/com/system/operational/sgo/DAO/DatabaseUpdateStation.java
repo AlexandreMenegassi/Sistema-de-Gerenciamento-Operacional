@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.model.UpdateStation;
-import com.system.operational.sgo.view.form.FormularioAtualizarDadosEstacaoActivity;
+import com.system.operational.sgo.view.form.FormAtualizarDadosEstacaoActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,11 +36,11 @@ public class DatabaseUpdateStation {
                     JSONObject object = new JSONObject(s);
                 if (!object.getBoolean("error")) {
                     Controller.message = object.getString("message");
-                    Toast.makeText(FormularioAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
-                    FormularioAtualizarDadosEstacaoActivity.activity(FormularioAtualizarDadosEstacaoActivity.context);
+                    Toast.makeText(FormAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
+                    FormAtualizarDadosEstacaoActivity.activity(FormAtualizarDadosEstacaoActivity.context);
                 } else {
                     Controller.message = object.getString("message");
-                    Toast.makeText(FormularioAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(FormAtualizarDadosEstacaoActivity.context, Controller.message, Toast.LENGTH_LONG).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

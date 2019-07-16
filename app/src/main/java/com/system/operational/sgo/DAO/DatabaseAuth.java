@@ -57,8 +57,8 @@ public class DatabaseAuth {
     }
 
     public static void autenticarUsuario(@org.jetbrains.annotations.NotNull JSONArray station) throws JSONException {
-        Controller.USUARIO.setId_usuario(station.getJSONObject(0).getInt("idusuario"));
-        Controller.USUARIO.setNome(station.getJSONObject(0).getString("nome"));
-        Controller.USUARIO.setNivel(station.getJSONObject(0).getInt("nivel"));
+        Controller.User.setId_usuario(station.getJSONObject(0).getInt("idusuario"));
+        Controller.User.setNome(station.getJSONObject(0).getString("nome"));
+        Controller.User.setNivel(station.getJSONObject(0).getInt("nivel"));
     }
 }
