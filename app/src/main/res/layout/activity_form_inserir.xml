@@ -6,7 +6,7 @@
     android:background="@drawable/fundo"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".view.form.FormularioInserirDadosEstacaoActivity">
+    tools:context=".view.form.FormInserirDadosEstacaoActivity">
 
     <ScrollView
         android:layout_width="match_parent"
