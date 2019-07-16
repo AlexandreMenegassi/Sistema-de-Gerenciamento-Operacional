@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import com.system.operational.sgo.R;
 import com.system.operational.sgo.controller.Controller;
-import com.system.operational.sgo.model.Estacao;
+import com.system.operational.sgo.model.InformationStation;
 
 public class ListaDeEstacaoViewHolder extends RecyclerView.ViewHolder {
 
@@ -25,21 +25,21 @@ public class ListaDeEstacaoViewHolder extends RecyclerView.ViewHolder {
         this.title_5 = itemView.findViewById(R.id.title5);
     }
 
-    public void bindData(final Estacao estacao, final OnListClickInteractionListenerListaDeEstacao listener) {
-        this.title_1.setText(estacao.nome);
-        this.title_2.setText(estacao.regional);
-        this.title_3.setText(estacao.uf);
-        this.title_4.setText(estacao.cidade);
-        this.title_5.setText(estacao.endid);
+    public void bindData(final InformationStation informationStation, final OnListClickInteractionListenerListaDeEstacao listener) {
+        this.title_1.setText(informationStation.nome);
+        this.title_2.setText(informationStation.regional);
+        this.title_3.setText(informationStation.uf);
+        this.title_4.setText(informationStation.cidade);
+        this.title_5.setText(informationStation.endid);
 
         this.title_1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 Controller.ESTACAO.clear();
-                listener.onClick(estacao.id_estacao);
-                Controller.ESTACAO.add(estacao.id_estacao);
-                Controller.ESTACAO.add(estacao.nome);
-                Controller.ESTACAO.add(estacao.endid);
+                listener.onClick(informationStation.id_estacao);
+                Controller.ESTACAO.add(informationStation.id_estacao);
+                Controller.ESTACAO.add(informationStation.nome);
+                Controller.ESTACAO.add(informationStation.endid);
                 return true;
             }
         });

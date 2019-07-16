@@ -8,17 +8,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.system.operational.sgo.R;
-import com.system.operational.sgo.model.Estacao;
+import com.system.operational.sgo.model.InformationStation;
 
 import java.util.List;
 
 public class ListaDeEstacaoListAdapter extends RecyclerView.Adapter<ListaDeEstacaoViewHolder> {
 
-    private List<Estacao> mListEstacao;
+    private List<InformationStation> mListInformationStation;
     private OnListClickInteractionListenerListaDeEstacao mOnListClickInteractionListener;
 
-    public ListaDeEstacaoListAdapter(List<Estacao> estacaoList, OnListClickInteractionListenerListaDeEstacao listener) {
-        this.mListEstacao = estacaoList;
+    public ListaDeEstacaoListAdapter(List<InformationStation> informationStationList, OnListClickInteractionListenerListaDeEstacao listener) {
+        this.mListInformationStation = informationStationList;
         this.mOnListClickInteractionListener = listener;
     }
 
@@ -34,12 +34,12 @@ public class ListaDeEstacaoListAdapter extends RecyclerView.Adapter<ListaDeEstac
 
     @Override
     public void onBindViewHolder(@NonNull ListaDeEstacaoViewHolder clientViewHolder, int i) {
-        Estacao estacao = this.mListEstacao.get(i);
-        clientViewHolder.bindData(estacao, this.mOnListClickInteractionListener);
+        InformationStation informationStation = this.mListInformationStation.get(i);
+        clientViewHolder.bindData(informationStation, this.mOnListClickInteractionListener);
     }
 
     @Override
     public int getItemCount() {
-        return this.mListEstacao.size();
+        return this.mListInformationStation.size();
     }
 }
