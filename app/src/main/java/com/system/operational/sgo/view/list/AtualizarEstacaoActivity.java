@@ -36,7 +36,7 @@ public class AtualizarEstacaoActivity extends AppCompatActivity {
         procurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Controller.filtarEstacao(AtualizarEstacaoActivity.this, recyclerView, autoCompleteTextView.getText().toString(), 0);
+                Controller.filtrarEstacao(AtualizarEstacaoActivity.this, recyclerView, autoCompleteTextView.getText().toString(), 0);
             }
         });
     }

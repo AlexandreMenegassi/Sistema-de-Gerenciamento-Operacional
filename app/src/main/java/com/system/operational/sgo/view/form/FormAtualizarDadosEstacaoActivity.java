@@ -14,7 +14,7 @@ import com.system.operational.sgo.controller.Controller;
 import com.system.operational.sgo.model.UpdateStation;
 import com.system.operational.sgo.view.main.MainActivity;
 
-public class FormularioAtualizarDadosEstacaoActivity extends AppCompatActivity {
+public class FormAtualizarDadosEstacaoActivity extends AppCompatActivity {
 
     TextView nameOne;
     TextView nameTwo;
@@ -92,7 +92,7 @@ public class FormularioAtualizarDadosEstacaoActivity extends AppCompatActivity {
             formConcentrador.setError("Campo obrigatório");
             return false;
         } else {
-            updateStation.setIdUsuario(Controller.USUARIO.id_usuario);
+            updateStation.setIdUsuario(Controller.User.id_usuario);
             updateStation.setIdEstacao((Integer) Controller.ESTACAO.get(0));
             updateStation.setTipoDeAcesso(formTipoAcesso.getText().toString());
             updateStation.setBateria(formBaterias.getText().toString());
