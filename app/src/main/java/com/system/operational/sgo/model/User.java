@@ -1,6 +1,6 @@
 package com.system.operational.sgo.model;
 
-public class Usuario {
+public class User {
 
     public int id_usuario;
     public String nome;

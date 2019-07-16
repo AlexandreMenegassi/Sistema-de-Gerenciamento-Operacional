@@ -2,7 +2,6 @@ package com.system.operational.sgo.model;
 
 public class UpdateStation {
 
-
     private int idEstacao;
     private int idUsuario;
     private String tipoDeAcesso;
