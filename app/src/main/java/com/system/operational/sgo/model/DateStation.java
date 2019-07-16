@@ -1,6 +1,6 @@
 package com.system.operational.sgo.model;
 
-public class StationSituation {
+public class DateStation {
 
     private int idEstacao;
     private String tipoDeAcesso;
@@ -11,10 +11,6 @@ public class StationSituation {
     private String folhaFonte;
     private String medidor;
     private String concentrador;
-
-    public int getIdEstacao() {
-        return idEstacao;
-    }
 
     public void setIdEstacao(int idEstacao) {
         this.idEstacao = idEstacao;
