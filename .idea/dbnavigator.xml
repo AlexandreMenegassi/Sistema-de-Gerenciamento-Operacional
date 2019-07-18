@@ -42,6 +42,7 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="17793823-d8ca-4fed-9421-bc6bad49ace0" dataset="sgo.nivelacesso" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="17793823-d8ca-4fed-9421-bc6bad49ace0" dataset="sgo.auditoriapreventiva" active-filter-id="" />
     <filter-actions connection-id="17793823-d8ca-4fed-9421-bc6bad49ace0" dataset="sgo.pendencia" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="17793823-d8ca-4fed-9421-bc6bad49ace0" dataset="sgo.preventiva" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="17793823-d8ca-4fed-9421-bc6bad49ace0" dataset="sgo.atualizaestacao" active-filter-id="EMPTY_FILTER" />

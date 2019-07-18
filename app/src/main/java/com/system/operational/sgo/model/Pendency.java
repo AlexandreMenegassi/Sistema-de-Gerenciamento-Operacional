@@ -6,11 +6,8 @@ public class Pendency {
     private int idUsuario;
     private String pendencia;
     private String recuperar;
-    private String categoria;
-    private String subcategoria;
     private String reparocompete;
     private String layer;
-    private String datamod;
     private String usuarioMod;
 
     public int getIdEstacao() {
@@ -45,22 +42,6 @@ public class Pendency {
         this.recuperar = recuperar;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public String getSubcategoria() {
-        return subcategoria;
-    }
-
-    public void setSubcategoria(String subcategoria) {
-        this.subcategoria = subcategoria;
-    }
-
     public String getReparocompete() {
         return reparocompete;
     }
@@ -75,14 +56,6 @@ public class Pendency {
 
     public void setLayer(String layer) {
         this.layer = layer;
-    }
-
-    public String getDatamod() {
-        return datamod;
-    }
-
-    public void setDatamod(String datamod) {
-        this.datamod = datamod;
     }
 
     public String getUsuarioMod() {

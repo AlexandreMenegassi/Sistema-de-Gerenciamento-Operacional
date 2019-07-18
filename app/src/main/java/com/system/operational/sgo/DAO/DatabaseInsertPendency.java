@@ -58,8 +58,6 @@ public class DatabaseInsertPendency {
     private static String parametroUrl(Pendency pendency){
         String parametro = pendency.getPendencia();
         parametro += "&recuperar=" + pendency.getRecuperar();
-        parametro += "&categoria=" + pendency.getCategoria();
-        parametro += "&subCategoria=" + pendency.getSubcategoria();
         parametro += "&reparo=" + pendency.getReparocompete();
         parametro += "&layer=" + pendency.getLayer();
         parametro += "&usuarioMod=" + pendency.getUsuarioMod();
