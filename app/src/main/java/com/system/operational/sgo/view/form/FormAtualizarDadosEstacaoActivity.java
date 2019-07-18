@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.system.operational.sgo.DAO.DatabaseUpdateStation;
 import com.system.operational.sgo.R;
@@ -19,13 +21,16 @@ public class FormAtualizarDadosEstacaoActivity extends AppCompatActivity {
     TextView nameOne;
     TextView nameTwo;
     EditText formTipoAcesso;
-    EditText formBaterias;
+    RadioButton formBateriasRbSim;
+    RadioButton formBateriasRbNao;
     EditText formQtdBanco;
     EditText formFabricanteFonte;
     EditText formQtdUr;
-    EditText formFolhaFonte;
+    RadioButton formFolhaFonteSim;
+    RadioButton formFolhaFonteNao;
     EditText formMedidor;
-    EditText formConcentrador;
+    RadioButton formConcentradorSim;
+    RadioButton formConcentradorNao;
     TextView btnUpdate;
     UpdateStation updateStation = new UpdateStation();
     public static Context context;
@@ -47,13 +52,16 @@ public class FormAtualizarDadosEstacaoActivity extends AppCompatActivity {
         nameOne = findViewById(R.id.formUpdateStationNameStationOneId);
         nameTwo = findViewById(R.id.formUpdateStationNameStationTwoId);
         formTipoAcesso = findViewById(R.id.formUpdateStationTipoAcessoId);
-        formBaterias = findViewById(R.id.formUpdateStationBateriasId);
+        formBateriasRbSim = findViewById(R.id.formRDSimUpdateStationBateriasId);
+        formBateriasRbNao = findViewById(R.id.formRDNaoUpdateStationBateriasId);
         formQtdBanco = findViewById(R.id.formUpdateStationQtdBancosId);
         formFabricanteFonte = findViewById(R.id.formUpdateStationFabricanteDaFonteId);
         formQtdUr = findViewById(R.id.formUpdateStationQtdUrId);
-        formFolhaFonte = findViewById(R.id.formUpdateStationFontePorForaId);
+        formFolhaFonteSim = findViewById(R.id.formRDSimUpdateStationFontePorForaId);
+        formFolhaFonteNao = findViewById(R.id.formRDNaoUpdateStationFontePorForaId);
         formMedidor = findViewById(R.id.formUpdateStationNumMedidorId);
-        formConcentrador = findViewById(R.id.formUpdateStationConcentradorId);
+        formConcentradorSim = findViewById(R.id.formRDSimUpdateStationSiteId);
+        formConcentradorNao = findViewById(R.id.formRDNaoUpdateStationSiteId);
         btnUpdate = findViewById(R.id.formUpdateStationBtnUpdateId);
     }
 
@@ -70,8 +78,8 @@ public class FormAtualizarDadosEstacaoActivity extends AppCompatActivity {
         if (formTipoAcesso.getText().toString().isEmpty()) {
             formTipoAcesso.setError("Campo obrigatório");
             return false;
-        } else if (formBaterias.getText().toString().isEmpty()) {
-            formBaterias.setError("Campo obrigatório");
+        } else if (!formBateriasRbSim.isChecked() && !formBateriasRbNao.isChecked()) {
+            Toast.makeText(FormAtualizarDadosEstacaoActivity.this, "Informe se possui bateria ou não!", Toast.LENGTH_SHORT).show();
             return false;
         } else if (formQtdBanco.getText().toString().isEmpty()) {
             formQtdBanco.setError("Campo obrigatório");
@@ -82,26 +90,29 @@ public class FormAtualizarDadosEstacaoActivity extends AppCompatActivity {
         } else if (formQtdUr.getText().toString().isEmpty()) {
             formQtdUr.setError("Campo obrigatório");
             return false;
-        } else if (formFolhaFonte.getText().toString().isEmpty()) {
-            formFolhaFonte.setError("Campo obrigatório");
+        } else  if (!formFolhaFonteSim.isChecked() && !formFolhaFonteNao.isChecked()) {
+            Toast.makeText(FormAtualizarDadosEstacaoActivity.this, "Informe se a fonte é por fora ou não!", Toast.LENGTH_SHORT).show();
             return false;
         } else if (formMedidor.getText().toString().isEmpty()) {
             formMedidor.setError("Campo obrigatório");
             return false;
-        } else if (formConcentrador.getText().toString().isEmpty()) {
-            formConcentrador.setError("Campo obrigatório");
+        } else if (!formConcentradorSim.isChecked() && !formConcentradorNao.isChecked()) {
+            Toast.makeText(FormAtualizarDadosEstacaoActivity.this, "Informe se existe o concentrador!", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             updateStation.setIdUsuario(Controller.User.id_usuario);
             updateStation.setIdEstacao((Integer) Controller.ESTACAO.get(0));
             updateStation.setTipoDeAcesso(formTipoAcesso.getText().toString());
-            updateStation.setBateria(formBaterias.getText().toString());
+            if(formBateriasRbSim.isChecked()) updateStation.setBateria("Sim");
+            if(formBateriasRbNao.isChecked()) updateStation.setBateria("Não");
             updateStation.setQtdBanco(formQtdBanco.getText().toString());
             updateStation.setFabricanteFonte(formFabricanteFonte.getText().toString());
             updateStation.setQtdUr(formQtdUr.getText().toString());
-            updateStation.setFolhaFonte(formFolhaFonte.getText().toString());
+            if(formFolhaFonteSim.isChecked()) updateStation.setFolhaFonte("Sim");
+            if(formFolhaFonteNao.isChecked()) updateStation.setFolhaFonte("Não");
             updateStation.setMedidor(formMedidor.getText().toString());
-            updateStation.setConcentrador(formConcentrador.getText().toString());
+            if(formConcentradorSim.isChecked()) updateStation.setConcentrador("Sim");
+            if(formConcentradorNao.isChecked()) updateStation.setConcentrador("Não");
             return true;
         }
     }

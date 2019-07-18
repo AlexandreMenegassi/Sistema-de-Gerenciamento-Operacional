@@ -81,18 +81,34 @@
                         android:layout_gravity="center"
                         android:src="@drawable/icon_battery" />
 
-                    <EditText
-                        android:id="@+id/formInsertStationBateriasId"
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
-                        android:background="#00000000"
-                        android:hint="@string/form_baterias"
-                        android:inputType="text"
                         android:letterSpacing="0.1"
-                        android:textColor="#fff"
-                        android:textColorHint="#d9e5f3"
-                        android:textSize="16dp" />
+                        android:text="Possui Bateria? "
+                        android:textColor="#d9e5f3" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/formRbSimInsertStationBateriasId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Sim" />
+
+                        <RadioButton
+                            android:id="@+id/formRbNaoInsertStationBateriasId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Não" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -210,18 +226,34 @@
                         android:layout_gravity="center"
                         android:src="@drawable/icon_style" />
 
-                    <EditText
-                        android:id="@+id/formInsertStationFontePorForaId"
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
-                        android:background="#00000000"
-                        android:hint="@string/form_fonte_por_fora"
-                        android:inputType="text"
                         android:letterSpacing="0.1"
-                        android:textColor="#fff"
-                        android:textColorHint="#d9e5f3"
-                        android:textSize="16dp" />
+                        android:text="Há fonte é por fora? "
+                        android:textColor="#d9e5f3" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/formRbSimInsertStationFontePorForaId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Sim" />
+
+                        <RadioButton
+                            android:id="@+id/formRbNaoInsertStationFontePorForaId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Não" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -274,18 +306,34 @@
                         android:layout_gravity="center"
                         android:src="@drawable/icon_computer" />
 
-                    <EditText
-                        android:id="@+id/formInsertStationConcentradorId"
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
-                        android:background="#00000000"
-                        android:hint="@string/form_site_concentrador"
-                        android:inputType="text"
                         android:letterSpacing="0.1"
-                        android:textColor="#fff"
-                        android:textColorHint="#d9e5f3"
-                        android:textSize="16dp" />
+                        android:text="Concentrador? "
+                        android:textColor="#d9e5f3" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/formRbSimInsertStationConcentradorId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Sim" />
+
+                        <RadioButton
+                            android:id="@+id/formRbNaoInsertStationConcentradorId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Não" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
