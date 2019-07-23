@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo"
-    android:padding="10dp"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".view.data.DadosEstacao">
 
     <ScrollView
@@ -50,14 +50,21 @@
                         android:src="@drawable/icon_transfer" />
 
                     <TextView
-                        android:id="@+id/dateStationTipoAcessoId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Tipo de Acesso"
+                        android:text="Tipo de Acesso: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationTipoAcessoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -80,14 +87,21 @@
                         android:src="@drawable/icon_battery" />
 
                     <TextView
-                        android:id="@+id/dateStationBateriasId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Baterias"
+                        android:text="Possui Baterias: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationBateriasId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -110,14 +124,21 @@
                         android:src="@drawable/icon_list" />
 
                     <TextView
-                        android:id="@+id/dateStationQtdBancoId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Quantidade de Banco"
+                        android:text="Quantidade de Bancos: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationQtdBancoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -140,14 +161,21 @@
                         android:src="@drawable/icon_domain" />
 
                     <TextView
-                        android:id="@+id/dateStationFabricanteId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Fabricante"
+                        android:text="Fabricante: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationFabricanteId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -170,14 +198,21 @@
                         android:src="@drawable/icon_list" />
 
                     <TextView
-                        android:id="@+id/dateStationQtdUrId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Quantidade de UR"
+                        android:text="Quantidade de UR / Conversor: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationQtdUrId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -200,14 +235,21 @@
                         android:src="@drawable/icon_style" />
 
                     <TextView
-                        android:id="@+id/dateStationFolhaFonteId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Folha Fonte"
+                        android:text="Há fonte é por fora: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationFolhaFonteId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -230,14 +272,21 @@
                         android:src="@drawable/icon_create" />
 
                     <TextView
-                        android:id="@+id/dateStationMedidorId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Medidor"
+                        android:text="Número do Medidor: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationMedidorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
@@ -260,14 +309,21 @@
                         android:src="@drawable/icon_computer" />
 
                     <TextView
-                        android:id="@+id/dateStationConcentradorId"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:background="#00000000"
                         android:letterSpacing="0.1"
-                        android:text="Concentrador"
+                        android:text="Concentrador: "
                         android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dateStationConcentradorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:letterSpacing="0.1"
                         android:textSize="16dp" />
 
                 </LinearLayout>
