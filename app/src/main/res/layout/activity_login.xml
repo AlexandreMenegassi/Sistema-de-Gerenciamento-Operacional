@@ -6,115 +6,106 @@
     android:background="@drawable/fundo"
     tools:context=".view.login.LoginActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:paddingLeft="60dp"
-        android:paddingRight="60dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/usrusr" />
-
-                <EditText
-                    android:id="@+id/form_login_login_Id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Usuário"
-                    android:inputType="text"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#d9e5f3"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/pswd" />
-
-                <EditText
-                    android:id="@+id/form_login_senha_Id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Senha"
-                    android:inputType="textWebPassword"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#d9e5f3"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        android:paddingLeft="60dp"
-        android:paddingRight="60dp">
-
-        <TextView
-            android:id="@+id/btn_login_Id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="100dp"
-            android:background="#009a9a"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:letterSpacing="0.2"
-            android:padding="16dp"
-            android:text="Entrar"
-            android:textColor="#d9e5f3"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="400dp"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_sgo"
+                android:layout_marginTop="80dp"/>
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/logo_sgo" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/usrusr" />
+
+                    <EditText
+                        android:id="@+id/form_login_login_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Usuário"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pswd" />
+
+                    <EditText
+                        android:id="@+id/form_login_senha_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Senha"
+                        android:inputType="textWebPassword"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#d9e5f3"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_login_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="30dp"
+                android:background="#009a9a"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="16dp"
+                android:text="Entrar"
+                android:textColor="#d9e5f3"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
