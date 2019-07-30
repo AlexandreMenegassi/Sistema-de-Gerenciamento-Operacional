@@ -51,8 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         if (editTextEmail.getText().toString().isEmpty()) {
             formularioPreenchido = false;
             Toast.makeText(this, "Informe seu Login!", Toast.LENGTH_SHORT).show();
-        }
-        if (editTextSenha.getText().toString().isEmpty()) {
+        }else if (editTextSenha.getText().toString().isEmpty()) {
             formularioPreenchido = false;
             Toast.makeText(this, "Informe sua Senha!", Toast.LENGTH_SHORT).show();
         }
