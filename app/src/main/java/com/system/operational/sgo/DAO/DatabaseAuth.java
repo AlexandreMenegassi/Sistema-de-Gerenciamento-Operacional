@@ -45,6 +45,8 @@ public class DatabaseAuth {
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
+                Controller.message = "Usuario ou senha incorretos";
+                Toast.makeText(LoginActivity.context, Controller.message, Toast.LENGTH_SHORT).show();
             }
         }
 
