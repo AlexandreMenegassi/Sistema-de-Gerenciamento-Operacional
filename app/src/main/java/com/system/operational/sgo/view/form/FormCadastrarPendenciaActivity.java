@@ -20,7 +20,6 @@ public class FormCadastrarPendenciaActivity extends AppCompatActivity {
     TextView nameTwo;
     EditText formPendencia;
     EditText formRecuperar;
-    EditText formReparo;
     EditText formLayer;
     TextView btnUpdate;
     Pendency pendency = new Pendency();
@@ -44,7 +43,6 @@ public class FormCadastrarPendenciaActivity extends AppCompatActivity {
         nameTwo = findViewById(R.id.formPendencyStationNameStationTwoId);
         formPendencia = findViewById(R.id.formPendencyInfoPendencyId);
         formRecuperar = findViewById(R.id.formPendencyRecoverId);
-        formReparo = findViewById(R.id.formPendencyRepairId);
         formLayer = findViewById(R.id.formPendencyLayerId);
         btnUpdate = findViewById(R.id.formPendencyBtnRegisterId);
     }
@@ -65,9 +63,6 @@ public class FormCadastrarPendenciaActivity extends AppCompatActivity {
         } else if (formRecuperar.getText().toString().isEmpty()) {
             formRecuperar.setError("Campo obrigatório");
             return false;
-        } else if (formReparo.getText().toString().isEmpty()) {
-            formReparo.setError("Campo obrigatório");
-            return false;
         } else if (formLayer.getText().toString().isEmpty()) {
             formLayer.setError("Campo obrigatório");
             return false;
@@ -76,8 +71,7 @@ public class FormCadastrarPendenciaActivity extends AppCompatActivity {
             pendency.setIdEstacao((Integer) Controller.ESTACAO.get(0));
             pendency.setPendencia(formPendencia.getText().toString());
             pendency.setRecuperar(formRecuperar.getText().toString());
-            pendency.setReparocompete(formReparo.getText().toString());
-            pendency.setLayer(formReparo.getText().toString());
+            pendency.setLayer(formLayer.getText().toString());
             pendency.setUsuarioMod(Controller.User.getNome());
             return true;
         }
